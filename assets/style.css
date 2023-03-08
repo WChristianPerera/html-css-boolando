@@ -14,7 +14,7 @@ html{
     padding-inline: 1rem;
 }
 
-._white a{
+._white,a{
     color: white;
 }
 
@@ -24,6 +24,11 @@ html{
 nav{
     height: 80px;
     background-color: #FF6900;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
 }
 
 nav .container{
@@ -76,5 +81,83 @@ a{
 
 .Cards{
     display: flex;
+    gap: 5%;
+    flex-wrap: wrap;
+    margin-top: 4em;
+
 }
+
+.card{
+    width: 30%;
+    position: relative;
+    
+}
+
+.image-length{
+    width: 100%;
+    display: flex;
+}
+
+h1{
+    font-size: 0.9em;
+}
+
+p{
+    color: #FF2939;
+    display: inline;
+}
+
+span{
+    text-decoration: line-through;
+}
+
+.discount{
+    background-color: #FE0303;
+    width: 20%;
+}
+
+.ecologic{
+    background-color: #007F00;
+    width: 45%;
+    
+}
+
+.discount,.ecologic{
+    padding: 0.2em;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    bottom: 150px;
+}
+
+.prefer{
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: white;
+    padding: 0.5em;
+}
+
+/* Image-changes */
+
+.card .n1:hover {
+visibility: hidden;
+}
+
+
+/* Footer */
+
+footer{
+    height: 100px;
+    background-color: black;
+    font-size: 0.9em;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+
 
