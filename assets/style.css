@@ -72,3 +72,9 @@ a{
     flex: 0 0 10%;
 }
 
+/* Main */
+
+.Cards{
+    display: flex;
+}
+
