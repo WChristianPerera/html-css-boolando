@@ -5,8 +5,9 @@
 }
 
 html{
-    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     z-index: 0;
+
 }
 
 .container{
@@ -20,7 +21,7 @@ html{
 }
 
 
-
+/* Header */
 
 nav{
     height: 80px;
@@ -29,7 +30,7 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 90;
 }
 
 nav .container{
@@ -94,9 +95,20 @@ a{
     
 }
 
-.image-length{
+.image-front{
     width: 100%;
     display: flex;
+}
+
+.image-front{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.image-back{
+    width: 100%;
 }
 
 h1{
@@ -139,11 +151,17 @@ span{
     padding: 0.5em;
 }
 
-/* Image-changes */
+/* Hover */
 
-.card .n1:hover {
-visibility: hidden;
+.image-front:hover{
+opacity: 0;
 }
+
+.prefer:hover{
+    cursor: pointer;
+    color: red;
+}
+
 
 
 /* Footer */
